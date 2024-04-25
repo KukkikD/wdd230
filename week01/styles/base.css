@@ -1,0 +1,131 @@
+* {
+    font-family: 'Caveat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header,
+footer {
+    background-color: #704264;
+    color: #fff;
+}
+
+header {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Added to center horizontally */
+}
+
+#profile-img {
+    width: 50%;
+    /* Adjust percentage */
+    max-width: 98px;
+    /* Set max-width*/
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px border: 1px solid #3F2E3E;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 2vw;
+    align-items: center;
+    box-shadow: 1px 1px 15px #3F2E3E;
+}
+
+#profile-name {
+    margin-right: 1rem;
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
+nav {
+    background-color: #3F2E3E;
+    color: #fff;
+    margin: 0 auto;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+    background-color: rgb(167, 130, 149, 0.3);
+}
+
+nav .active {
+
+    background-color: rgb(239, 225, 209, 0.3);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+h1 {
+    margin-top: .75rem;
+    margin-left: 2vw;
+    color: #331D2C;
+    text-decoration: underline;
+}
+
+.card {
+    margin: 1rem 2vw; //improve visual tangent design error
+    grid-row: 10px;
+}
+
+.card section {
+    border: 1px solid #704264;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: .75rem 0;
+}
+
+.card h2 {
+    background: #704264;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.card p {
+    padding: 10px;
+    color: #331D2C;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.card ul {
+    color: #331D2C;
+    text-align: justify;
+    margin: 1rem 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: .75rem 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 10;
+}

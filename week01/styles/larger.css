@@ -1,0 +1,20 @@
+@media only screen and (min-width: 640px) {
+    .card {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .card section {
+        box-shadow: 1px 1px 10px #704264;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+}
