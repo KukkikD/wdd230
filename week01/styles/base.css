@@ -27,7 +27,8 @@ header {
     /* Set max-width*/
     height: auto;
     /* Maintain aspect ratio */
-    margin-right: 10px border: 1px solid #3F2E3E;
+    margin-right: 10px;
+    border: 1px solid #3F2E3E;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
@@ -85,8 +86,9 @@ h1 {
 }
 
 .card {
-    margin: 1rem 2vw; //improve visual tangent design error
-    grid-row: 10px;
+    margin: 1rem 2vw;
+    /* improve visual tangent design error */
+    padding: 10px;
 }
 
 .card section {
