@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #527853;
+    --secondary-color: #e0891f;
+    --accent1-color: #F7B787;
+    --accent2-color: #F9E8D9;
+
+
+    --heading-font: "Oleo Script", sans-serif;
+    --paragraph-font: outfit, sans-serif;
+
+
+    --headline-color-on-white: #527853;
+    /* headlines on a white background */
+    --headline-color-on-color: #e0891f;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #324a33;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #e0891f;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #527853;
+    --nav-link-color: #F7B787;
+    --nav-background-color: #527853;
+    --nav-hover-link-color: rgb(238, 114, 20, 0.9);
+    --nav-hover-background-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 200%;
+    /* Adjust percentage */
+    max-width: 200px;
+    /* Set max-width*/
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#wireframe-larger {
+    max-width: 300px;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--paragraph-color-on-color);
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+#paragraph-font {
+    font-family: var(--paragraph-font);
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 1em;
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
