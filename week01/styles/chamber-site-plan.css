@@ -53,9 +53,7 @@ img {
 
 h1,
 h2,
-h4,
-h5,
-h6 {
+h4 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
 }
