@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+    <style>
+        .highlight {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img src="dinosaur.png"
+            alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+    </section>
+    <script>
+        /*DOM manipulation*/
+        const link = document.querySelector("a");
+        link.textContent = "Mozilla Developer Network";
+        link.href = "https://developer.mozilla.org";
+
+        /*Creating and placing new nodes*/
+        /*let's start by grabbing a reference to our <section> element*/
+        const sect = document.querySelector("section");
+        /*reate a new paragraph using Document.createElement() and give it some text content in the same way as before*/
+        const para = document.createElement("p");
+        para.textContent = "We hope you enjoyed the ride.";
+        /*append the new paragraph at the end of the section*/
+        sect.appendChild(para);
+        /*et's add a text node to the paragraph the link sits inside, to round off the sentence nicely*/
+        const text = document.createTextNode(
+            " — the premier source for web development knowledge.",);
+        /*we'll grab a reference to the paragraph the link is inside, and append the text node*/
+        const linkPara = document.querySelector("p");
+        linkPara.appendChild(text);
+
+        /*move the paragraph with the link inside it to the bottom of the section*/
+        //sect.appendChild(linkPara);
+
+        /*make a copy Node.cloneNode()*/
+
+        /*Removing a node*/
+        //sect.removeChild(linkPara);
+
+        /*remove a node based only on a reference to itself Element.remove()*/
+        //linkPara.remove();
+
+        /*add inline styles directly onto elements you want to dynamically style. 
+        This is done with the HTMLElement.style property*/
+        //para.style.color = "white";
+        //para.style.backgroundColor = "black";
+        //para.style.padding = "10px";
+        //para.style.width = "250px";
+        // para.style.textAlign = "center";
+        /*useful method for general HTML manipulation — Element.setAttribute() 
+        — this takes two arguments In this case we will set a class name of highlight on our paragraph*/
+        para.setAttribute("class", "highlight");
+    </script>
+</body>
+
+</html>
