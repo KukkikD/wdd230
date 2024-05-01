@@ -50,10 +50,6 @@ nav {
 
 }
 
-nav ul {
-    list-style-type: none;
-}
-
 nav a {
     display: block;
     color: #fff;
@@ -68,9 +64,41 @@ nav a:hover {
 }
 
 nav .active {
-
     background-color: #3E3232;
     color: #fff;
+}
+
+#myButton::before {
+    content: "☰";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+    /* Move Hamburger around*/
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+}
+
+/* CSS open class */
+ul.menuLinks.open {
+    display: block;
+}
+
+#myButton.open::before {
+    content: "X";
 }
 
 main {
