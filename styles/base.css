@@ -175,6 +175,8 @@ a {
     width: 24px;
     height: 24px;
     cursor: pointer;
+    z-index: 1000;
+    /* High z-index to ensure it's accessible */
 }
 
 main.dark {
