@@ -160,3 +160,8 @@ footer {
         'GRAD' 0,
         'opsz' 10;
 }
+
+.learningAct a href,
+a {
+    margin-right: 1rem;
+}
