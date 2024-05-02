@@ -18,6 +18,7 @@ header {
     align-items: center;
     justify-content: center;
     /* Added to center horizontally */
+    position: relative;
 }
 
 #profile-img {
@@ -164,4 +165,23 @@ footer {
 .learningAct a href,
 a {
     margin-right: 1rem;
+}
+
+/* Dark mode styling */
+#darkBtn {
+    position: absolute;
+    top: 1rem;
+    left: 2vw;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+main.dark {
+    background: black;
+    color: white;
+}
+
+main.dark h1 {
+    color: white;
 }
