@@ -1,0 +1,33 @@
+@media only screen and (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+    }
+
+    .call-to-action {
+        width: 50%;
+    }
+
+    .join-button {
+        padding: 8px 16px;
+    }
+
+    .company {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+}

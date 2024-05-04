@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chehalis Chamber Homepage</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Amornrat Dizon - course assignment">
+    <meta name="author" content="Amornrat Dizon Howard">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/chamber-logo.png" alt="Chehalis Chamber Logo" class="logo">
+            <h1>Welcome to Chehalis Chamber</h1>
+        </a>
+    </header>
+    <nav id="animateme">
+        <button id="menuButton" aria-label="Menu"></button>
+        <ul class=" menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Image Section -->
+        <div id="hero">
+            <div id="hero-box">
+                <img class="hero-image" src="images/hero.png" alt="Hero Image">
+            </div>
+
+            <!-- Call to Action Section -->
+            <section class="call-to-action">
+                <h2 class="hero-msg">Join Our Community</h2>
+                <p class="hero-p">Be a part of the vibrant Chehalis Chamber.</p>
+                <div class='button-box'>
+                    <a class="join" href="join.html">Join us!</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="card">
+            <!-- Weather Card Section -->
+            <section class="weather-card">
+                <h2>Local Weather</h2>
+                <p><strong>75°F, Sunny🔆</strong></p>
+                <p>Perfect day for an outdoor event!</p>
+            </section>
+
+            <!-- Current Events Section -->
+            <section class="current-events">
+                <h2>Current Events</h2>
+                <h3>📅 3rd Annual Mother's Day Market - May 04, 2024</h3>
+                <p>Come shop over 40 different vendors and artisans! Find something for Mom or bring Mom and make a
+                    day of it! Food trucks,</p><a href="#" class="read-more">Read more...</a>
+                <p class="hidden">dessert trucks and coffee trucks! For those 21+ stop by the Mimosa Bar
+                    and purchase a drink while you shop. The catered bar is brought to you by Garbe’s.
+                    <br>Saturday, May 4th, 3pm-8pm
+                    <br>Jester Auto Museum 321 Hamilton Rd.,Chehalis, WA 98532
+                    <br>Free Admission & Free Parking
+                </p>
+            </section>
+
+            <!-- Company Spotlights Section -->
+            <section class="company-spotlights">
+                <h2>Company Spotlights</h2>
+            </section>
+            <div class="company">
+                <section>
+                    <h3>RNH Welding</h3>
+                    <p>Your Trusted Partner in Welding and Fabrication</p>
+                    <p>🖁 +1(360)827-0804</p>
+                </section>
+                <section>
+                    <h3>Ashby Builders</h3>
+                    <p>Leading the way in eco-friendly construction.</p>
+                    <p>🖁 +1(360)555-4444</p>
+                </section>
+                <section>
+                    <h3>Modern Touch</h3>
+                    <p>Innovative solutions for modern businesses.</p>
+                    <p>🖁 +1(360)111-2222</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us at 🖂 chehalischamber@example.org | Tel 🖁+1(360)123-5555</p>
+        &copy;<span id="currentYear"></span> Chehalis Chamber |<strong> Amornrat Dizon Howard</strong> |WDD 230 Project
+        |
+        Last Modified: <span id="lastModified"></span>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
