@@ -28,8 +28,8 @@
 
 <body>
     <header>
-        <img src="images/dark.svg" alt="dark mode" id="darkBtn">
-        <img id="profile-img" src="images/profile.jpg" alt="kukkik's profile" width="98" height="133">
+        <img src="images/dark.svg" alt="dark mode" id="darkBtn" loading="lazy" width="1" height="1">
+        <img id="profile-img" src="images/profile.webp" alt="kukkik's profile" loading="lazy" width="691" height="900">
         <span id="profile-name">KUKKIK | Amornrat Dizon Howard</span>
     </header>
     <nav id="animateme">
@@ -42,6 +42,18 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="images/hero-large.webp" alt="Bangkok Thailand Temple" loading="lazy" width="2" height="1">
+
+            </picture>
+            <div class="herolabel">
+                <p>Bangkok Thailand Temple</p>
+            </div>
+        </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="card">
             <section>
@@ -71,15 +83,25 @@
             </section>
             <section>
                 <h2>Information</h2>
-                <p>the weather and number of visits to the page are coming soon</p>
+                <p>the weather is coming soon</p>
+                <p>&#128640;<span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div><!--End card-->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62009.639956834995!2d100.48437582391104!3d13.742499408511737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fe86d7e61b1%3A0x191e50895e68b7f5!2sBangkok%20Thailand%20Temple!5e0!3m2!1sen!2sus!4v1715232747999!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
         <p id="footer-p">
-            &copy;<span id="currentYear"></span> Amornrat Dizon Howard | Bangkok, Thailand <img src="images/flag.jpg"
-                alt="Thailand's flag" width="25" height="15">
-        </p>
+            &copy;<span id="currentYear"></span> Amornrat Dizon Howard | Bangkok, Thailand <img src="images/flag.webp"
+                alt="Thailand's flag" loading="lazy" width="25" height="15"> </p>
+        <P><span class="material-symbols-outlined">
+                manage_accounts
+            </span>Last Modified : <span id="lastModified"></span></P>
+
     </footer>
     <script src="scripts/getDates.js"></script>
 </body>

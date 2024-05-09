@@ -26,4 +26,15 @@
         display: flex;
     }
 
+    .herolabel p {
+        font-size: 2rem;
+    }
+
+    #profile-name {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
 }
