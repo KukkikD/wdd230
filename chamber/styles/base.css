@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&display=swap');
-
 /* Color Scheme & /* Typography */
 :root {
     /* change the values below to your colors from your palette */
@@ -36,7 +33,7 @@
 }
 
 body {
-    font-family: var(--paragraph-font);
+    font-family: outfit, sans-serif;
     line-height: 1.6;
     color: var(--paragraph-color-on-white);
     /*background-color: var(--accent2-color);*/
@@ -44,13 +41,13 @@ body {
 
 h1,
 h2 {
-    font-family: var(--heading-font);
+    font-family: "Oleo Script", sans-serif;
     color: var(--headline-color-on-white);
 }
 
 h3 {
-    font-family: var(--heading-font);
-    color: #a8561f;
+    font-family: "Oleo Script", sans-serif;
+    color: #833d0e;
 
 }
 
@@ -131,62 +128,62 @@ footer p {
     color: var(--headline-color-on-color);
 }
 
-#hero-box {
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
+.hero {
+    margin: 10px auto;
+    position: relative;
 }
 
-.hero-image {
-    width: 100%;
-    overflow: hidden;
-}
-
-.hero-image img {
+.hero img {
     width: 100%;
     height: auto;
-    display: block;
-    /* Removes any default spacing or margins around the image */
 }
 
-#hero-msg {
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-    font-size: 2em;
-    letter-spacing: 3px;
-
+.hero-msg {
+    position: absolute;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Adjust the background color and opacity as needed */
+    padding: 10px;
+    width: 50%;
+    align-items: center;
 }
 
-#hero-msg h2 {
+.hero-msg h2 {
     text-align: center;
+    font-size: 12px;
+}
+
+.hero-msg p {
+    text-align: center;
+    font-size: 10px;
 }
 
 /* Buttons */
 .button-box {
     text-align: center;
     padding: 1rem;
-
+    top: 10px;
+    left: 30px;
 }
 
 .join {
     background-color: #1A4D2E;
     color: #fefae0;
     padding: 12px 20px;
-    font-size: 15px;
+    font-size: 10px;
     text-decoration: none;
     border-radius: 10px;
     overflow: hidden;
 }
 
-
 .join:hover {
     background-color: var(--paragraph-color-on-color);
     color: var(--nav-background-color);
 }
-
-
 
 header {
     text-align: center;
@@ -218,32 +215,18 @@ header {
     margin-left: 2vw;
     text-align: center;
     align-items: center;
-
 }
 
 h1 {
-    font-family: var(--heading-font);
+    font-family: "Oleo Script", sans-serif;
     margin: 0;
     /* Removes default margin to control spacing tightly */
     color: var(--headline-color-on-white);
     /* Inherits color from parent link styling */
-    font-size: 2em;
+    font-size: 1rem;
     text-align: center;
     align-items: center;
     display: inline-flex;
-}
-
-.call-to-action {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Adjust the background color and opacity as needed */
-    padding: 10px;
-    text-align: center;
-    width: 50%;
-    /* Adjust the width as needed */
 }
 
 /*Card */
@@ -293,4 +276,73 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+/* Discover page*/
+/* Sidebar Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Initially, one column */
+    text-align: center;
+    margin: 1rem 2vw;
+}
+
+div.sidebar {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    /* Display main content secound by default (but it's doesn't work) */
+}
+
+.sidebar-card {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    border: 1px solid #fff;
+    max-width: 70%;
+    margin-left: 15%;
+}
+
+.main-content-2 {
+    background-color: #fff;
+    margin: 0 2vw;
+    border: 1px solid #1A4D2E;
+    gap: 20px;
+    width: 100%;
+    display: grid;
+    order: 1;
+    /* Display main content first by default (but it's doesn't work) */
+    margin-top: 20px;
+}
+
+.main-content-2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+
+
+}
+
+.card-image {
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 20px;
+    border: 20px solid #FFF;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.caption p {
+    color: var(--paragraph-color-on-white);
+}
+
+#side-image img {
+    width: 100%;
+    height: auto;
 }

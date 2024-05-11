@@ -40,3 +40,66 @@ document.querySelectorAll('.read-more').forEach(link => {
 //myBtn.addEventListener('click', () => {
 //    myBtn.classList.toggle('dark');
 //});
+
+// Display visit message based on localStorage
+//const visitsDisplay = document.querySelector(".visits");
+
+// Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+//let lastVisits = Number(window.localStorage.getItem("lastVisits-ls")) || 0;
+
+// If this is the first visit or display the number of visits.
+//if (lastVisits !== 0) {
+//visitsDisplay.textContent = lastVisits;
+//}
+//else {
+//    visitsDisplay.textContent = `🥳 Welcome! Let us know if you have any questions.`;
+//}
+
+// increment the number of visits by one.
+//lastVisits++;
+
+// store the new visit total into localStorage, key=numVisits-ls
+//localStorage.setItem("lastVisits-ls", lastVisits);
+
+
+//if (!lastVisits) {
+//    visitMessage.textContent = "🥳 Welcome! Let us know if you have any questions.";
+//} else {
+//   const now = new Date();
+//   const daysSinceLastVisit = Math.floor((now - new Date(lastVisits)) / (1000 * 60 * 60 * 24));
+
+//   if (daysSinceLastVisit === 0) {
+//        visitMessage.textContent = "Back so soon! Awesome!";
+//    } else {
+//        visitMessage.textContent = `You last visited ${daysSinceLastVisit} ${daysSinceLastVisit === 1 ? 'day' : 'days'} ago.`;
+//    }
+//}
+
+const visitMessage = document.querySelector("#visitMessage");
+
+// Get the stored timestamp for the last visit from localStorage
+let lastVisitTimestamp = window.localStorage.getItem("lastVisit");
+
+// If lastVisitTimestamp is null (meaning it's the first visit), show the welcome message
+if (!lastVisitTimestamp) {
+    visitMessage.textContent = "🥳 Welcome! Let us know if you have any questions.";
+} else {
+    // Convert the lastVisitTimestamp to a Date object
+    lastVisitTimestamp = new Date(parseInt(lastVisitTimestamp));
+
+    // Calculate the days since the last visit
+    const daysSinceLastVisit = Math.floor((Date.now() - lastVisitTimestamp) / (1000 * 60 * 60 * 24));
+
+    // Format the last visit date
+    const lastVisitDate = lastVisitTimestamp.toLocaleDateString();
+
+    // Show the appropriate message based on the days since last visit
+    if (daysSinceLastVisit === 0) {
+        visitMessage.textContent = "Back so soon! Awesome!";
+    } else {
+        visitMessage.textContent = `You last visited ${daysSinceLastVisit} ${daysSinceLastVisit === 1 ? 'day' : 'days'} ago on ${lastVisitDate}.`;
+    }
+}
+
+// Update the lastVisitTimestamp in localStorage with the current timestamp
+window.localStorage.setItem('lastVisit', Date.now().toString());

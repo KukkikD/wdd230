@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chehalis Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Amornrat Dizon - course assignment">
+    <meta name="author" content="Amornrat Dizon Howard">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="WDD230-Chehalis Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kukkikd.github.io/wdd230/chamber/images/hero.png">
+    <meta property="og:url" content="https://kukkikd.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/chamber-logo.png" alt="Chehalis Chamber Logo" class="logo">
+            <h1>Welcome to Chehalis Chamber of Commerce</h1>
+        </a>
+    </header>
+    <nav id="animateme">
+        <button id="menuButton" aria-label="Menu"></button>
+        <ul class=" menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3>Visitor Message &#127881;</h3>
+                    <div id="visitMessage">
+                        <span class="label"></span><span class="visits"></span>
+                    </div>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Don't miss activity &#x1F42A;</h3>
+                    <div id="side-image">
+                        <picture>
+                            <source srcset="images/lama-walk-small.webp" media="(max-width: 500px)">
+                            <img src="images/lama-walk-large.webp" alt="Lama walk in the park" loading="lazy" width="5"
+                                height="4">
+                        </picture>
+                    </div>
+                    <div class="caption">
+                        <p>Walk with lama at The Willapa Hills State Park Trail.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="main-content-2">
+                <section class="card-image">
+                    <picture>
+                        <source srcset="images/chehalis-timberland-library-small.webp" media="(max-width: 500px)">
+                        <img class="hover" src="images/chehalis-timberland-library-large.webp"
+                            alt="The Chehalis Timberland Library" loading="lazy" width="5" height="4">
+                    </picture>
+                    <div class="caption">
+                        <h2>Chehalis Timberland Library</h2>
+                        <p>The Carnegie-inspired Vernetta Smith Chehalis Timberland Library opened to the public on
+                            November 4, 2008. </p>
+                    </div>
+
+                </section>
+
+                <section class="card-image">
+                    <picture>
+                        <source srcset="images/downtown-chehalis-small.webp" media="(max-width: 500px)">
+                        <img class="hover" src="images/downtown-chehalis-large.webp" alt="Historic Downtown District"
+                            loading="lazy" width="5" height="4">
+                    </picture>
+                    <div class="caption">
+                        <h2>Historic Downtown District</h2>
+                        <p>Stroll the streets of downtown where historic buildings are reborn with charming boutiques.
+                            Take the kids to a real soda fountain or grab a cup of joe and let them enjoy the kids room
+                            at our locally owned bookstore. Browse the shops for home décor, clothing and furniture,
+                            baby & maternity wear, and more! </p>
+                    </div>
+                </section>
+
+                <section class="card-image">
+                    <picture>
+                        <source srcset="images/lewis-county-historical-museum-small.webp" media="(max-width: 500px)">
+                        <img class="hover" src="images/lewis-county-historical-museum-large.webp"
+                            alt="Lewis County Historical Museum" loading="lazy" width="5" height="4">
+                    </picture>
+                    <div class="caption">
+                        <h2>Lewis County Historical Museum</h2>
+                        <p>The Lewis County Historical Society and Museum celebrates the storied history of Lewis
+                            County, Washington.</p>
+                    </div>
+                </section>
+
+                <section class="card-image">
+                    <picture>
+                        <source srcset="images/chehalis-river-small.webp" media="(max-width: 500px)">
+                        <img class="hover" src="images/chehalis-river-large.webp" alt="The Chehalis River"
+                            loading="lazy" width="5" height="4">
+                    </picture>
+                    <div class="caption">
+                        <h2>Chehalis River</h2>
+                        <p>The Chehalis River drains a vast area of western Washington, forming the largest river basin
+                            in the state, after the Columbia. Fed by rivers and streams that flow from the Cascade
+                            foothills, the Willapa Hills, glacial prairies of the northeast and the Olympic Mountains
+                        </p>
+                    </div>
+                </section>
+
+                <section class="card-image">
+                    <picture>
+                        <source srcset="images/willapa-hill-trial-small.webp" media="(max-width: 500px)">
+                        <img class="hover" src="images/willapa-hill-trial-large.webp"
+                            alt="The Willapa Hills State Park Trail" loading="lazy" width="5" height="4">
+                    </picture>
+                    <div class="caption">
+                        <h2>Willapa Hills State Park Trail</h2>
+                        <p>The Willapa Hills State Park Trail spans 56 miles east-west between Chehalis in Lewis County
+                            and South Bend in Pacific County. Pedestrians, equestrians, cyclists and skaters can
+                            experience scenic views of Willapa Valley, rivers, farms and small towns along the way.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="card-image">
+                    <picture>
+                        <source srcset="images/penny-playground-small.webp" media="(max-width: 500px)">
+                        <img class="hover" src="images/penny-playground-large.webp" alt="The Penny Playground"
+                            loading="lazy" width="5" height="4">
+                    </picture>
+                    <div class="caption">
+                        <h2>Penny Playground in Recreation Park</h2>
+                        <p>The Playgrounds provide a central meeting location for children to have these experiences.
+                            The closest accessible playground is nearly 70 miles away and is much smaller in scope.
+                            That’s why we want to create a free to all play environment using inclusive playground
+                            equipment that welcomes kids and families of all abilities to learn, play and grow together.
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us at 🖂 chehalischamber@example.org | Tel 🖁+1(360)123-5555</p>
+        &copy;<span id="currentYear"></span> Chehalis Chamber |<strong> Amornrat Dizon Howard</strong> |WDD 230 Project
+        |
+        ⚙️Last Modified: <span id="lastModified"></span>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
