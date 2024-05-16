@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Build</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Amornrat Dizon - course assignment table build">
+    <meta name="author" content="Amornrat Dizon Howard">
+    <link type="text/css" rel="stylesheet" href="styles/tablebuild.css"> <!--change file-name.css-->
+</head>
+
+<body>
+    <header>
+        <h1>Table Build Activity</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr class="header">
+                    <th rowspan="2" scope="col"></th>
+                    <th colspan="3" scope="colgroup">ACM Wildwest Service</th>
+                </tr>
+
+                <tr class="sub-header">
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Business</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Feature1</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Feature2</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Feature3</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Amornrat Dizon Howard</p>
+    </footer>
+</body>
+
+</html>

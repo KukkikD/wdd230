@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amornrat Dizon Howard - WDD 230 - Web Frontend Development - Form</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Amornrat Dizon - course assignment portal">
+    <meta name="author" content="Amornrat Dizon Howard">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css"><!--code should appear first in the CSS link reference cascade-->
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- linke icon modified -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bangkok Thailand - Amornrat Dizon Howard page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037.jpg">
+    <meta property="og:url" content="https://kukkikd.github.io/wdd230/">
+</head>
+
+<body>
+    <header>
+        <img src="images/dark.svg" alt="dark mode" id="darkBtn" loading="lazy" width="1" height="1">
+        <img id="profile-img" src="images/profile.webp" alt="kukkik's profile" loading="lazy" width="691" height="900">
+        <span id="profile-name">KUKKIK | Amornrat Dizon Howard</span>
+    </header>
+    <nav id="animateme">
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="https://kukkikd.github.io/wdd230/chamber/index.html">Chamber</a></li>
+            <li><a href="https://kukkikd.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="https://kukkikd.github.io/wdd230/form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Form</h1>
+        <form id="userForm" method="get" action="record.html">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required
+                title="Password must be at least 8 characters long and contain only alphanumeric characters.">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" required
+                title="Please enter a valid email address from the byui.edu domain.">
+
+            <label for="pageRating">Page Rating</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="5">
+            <div class="range-value">Rating: <span id="rangeValue">5</span></div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p id="footer-p">
+            &copy;<span id="currentYear"></span> Amornrat Dizon Howard | Bangkok, Thailand <img src="images/flag.webp"
+                alt="Thailand's flag" loading="lazy" width="25" height="15"> </p>
+        <P><span class="material-symbols-outlined">
+                manage_accounts
+            </span>Last Modified : <span id="lastModified"></span></P>
+
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>
