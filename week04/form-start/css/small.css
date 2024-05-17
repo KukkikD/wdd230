@@ -119,7 +119,7 @@ main {
     /*overide the default browser styling*/
 }
 
-.wf1 input[type="redio"],
+.wf1 input[type="radio"],
 .wf1 input[type="checkbox"] {
     margin-right: 6px;
 }
