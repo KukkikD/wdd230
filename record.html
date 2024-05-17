@@ -41,47 +41,14 @@
             <li><a href="https://kukkikd.github.io/wdd230/form.html">Form</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>Visitor Experience Feedback Form</h1>
-
-        <form id="userForm" method="get" action="record.html">
-            <fieldset>
-                <legend><strong>Sign in / Sign up:</strong></legend>
-                <label>Username*<input type="text" id="username" name="username" required></label>
-
-                <label>Password*<input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required
-                        title="Password must be at least 8 characters long and contain only alphanumeric characters.">
-                </label>
-
-                <label>Confirm Password*
-                    <input type="password" id="confirmPassword" name="confirmPassword" required></label>
-
-                <div id="feedback"></div>
-
-                <label>Email*<input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$"
-                        placeholder="someone@buyi.edu" required
-                        title="Please enter a valid email address from the byui.edu domain.">
-                </label>
-            </fieldset>
-
-            <fieldset>
-                <legend><strong>Page Rating:</strong></legend>
-                <div id="rangevalue">0</div>
-                <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
-                <datalist id="rangevalues">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </datalist>
-            </fieldset>
-
-            <input type="submit" value="Confirm My Information">
-
-        </form>
+        <div class="record">
+            <h1>Thank you for your rating!</h1>
+            <p class="sign-up">We have received your feedback successfully.</p>
+        </div>
     </main>
+
     <footer>
         <p id="footer-p">
             &copy;<span id="currentYear"></span> Amornrat Dizon Howard | Bangkok, Thailand <img src="images/flag.webp"
@@ -92,7 +59,6 @@
 
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/form.js"></script>
 </body>
 
 </html>
