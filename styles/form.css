@@ -7,7 +7,6 @@
 
 * {
     font-family: 'Caveat', sans-serif;
-    ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -121,7 +120,7 @@ main {
 
 h1 {
     margin-top: .75rem;
-    margin-left: 2vw;
+    margin-left: 3.5vw;
     color: var(--accent2-color);
     text-decoration: underline;
     font-size: 1rem;
@@ -222,7 +221,6 @@ input[type="submit"]:hover {
 
 #r {
     width: 200px;
-    margin-bottom: 10px;
     background-color: var(--primary-color);
 }
 
