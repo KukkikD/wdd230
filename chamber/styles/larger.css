@@ -51,6 +51,8 @@
         font-size: 15px;
     }
 
+    /* --------- DISCOVER PAGE --------------- */
+
     .container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -70,5 +72,30 @@
 
     img.hover:hover {
         box-shadow: 0 0 50px #333;
+    }
+
+    /* --------- JOIN PAGE --------------- */
+
+    div.containerJoin {
+        display: flex;
+        grid-template-columns: 30% 70%;
+        margin: 1rem 2vw;
+        margin-left: 1rem;
+        padding: 5px;
+        gap: 50px;
+    }
+
+    .sidebarJoin {
+        display: flex;
+        justify-items: center;
+        margin-top: 80px;
+        margin-left: 2rem;
+        margin-bottom: 150px;
+
+    }
+
+    .benefits-container {
+        margin-top: 100px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 }

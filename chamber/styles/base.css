@@ -278,7 +278,7 @@ h1 {
     display: none;
 }
 
-/* Discover page*/
+/* --------- DISCOVER PAGE --------------- */
 /* Sidebar Layout */
 .container {
     display: grid;
@@ -288,11 +288,9 @@ h1 {
     margin: 1rem 2vw;
 }
 
-div.sidebar {
+.sidebar {
     display: flex;
     flex-direction: column;
-    order: 2;
-    /* Display main content secound by default (but it's doesn't work) */
 }
 
 .sidebar-card {
@@ -322,8 +320,6 @@ div.sidebar {
     display: block;
     padding: 10px;
     border-radius: 20px;
-
-
 }
 
 .card-image {
@@ -345,4 +341,140 @@ div.sidebar {
 #side-image img {
     width: 100%;
     height: auto;
+}
+
+/* --------- JOIN PAGE --------------- */
+.containerJoin {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem 2vw;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 1rem 3vw;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.sidebarJoin {
+    display: grid;
+    margin: 1rem 3vw;
+}
+
+div.benefits-container {
+    display: block;
+    background-color: rgba(250, 232, 217, 0.3);
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.benefits-container>h1 .benefits {
+    margin: 10px;
+    padding: 5px;
+}
+
+.benefits {
+    background: white;
+    margin: 10px;
+}
+
+.benefits>h2,
+p,
+strong {
+    margin: 4px;
+    margin-left: 10px;
+    font-size: 90%;
+}
+
+legend {
+    text-align: left;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: rgba(250, 232, 217, 0.3);
+}
+
+input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#1A4D2E, #dcd7d7);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 100%;
+    margin: 1rem 2% 2%;
+    /*2% right and 2% left + 96% (width) = 100%*/
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(rgba(5, 72, 58, 0.9), #000);
+    color: var(--paragraph-color-on-color);
+}
+
+.benefits-container>h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containerJoin input:required {
+    border-bottom: solid 8px rgb(238, 114, 20, 0.9);
+}
+
+.containerJoin input:required:valid {
+    border-bottom: solid 8px #1A4D2E;
+}
+
+.error-message {
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+.required-asterisk {
+    color: #833d0e;
+}
+
+
+/* --------- THANKYOU PAGE --------------- */
+div.thankyou {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+div.thankyou h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }

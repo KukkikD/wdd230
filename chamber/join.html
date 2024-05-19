@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chehalis Chamber of Commerce - Join Page</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Amornrat Dizon - course assignment form (join page)">
+    <meta name="author" content="Amornrat Dizon Howard">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="WDD230-Chehalis Chamber of Commerce Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kukkikd.github.io/wdd230/chamber/images/hero.png">
+    <meta property="og:url" content="https://kukkikd.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/chamber-logo.webp" alt="Chehalis Chamber Logo" class="logo" loading="lazy" width="1"
+                height="1">
+            <h1>Welcome to Chehalis Chamber of Commerce</h1>
+        </a>
+    </header>
+    <nav id="animateme">
+        <button id="menuButton" aria-label="Menu"></button>
+        <ul class=" menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="containerJoin">
+            <div class="form-container">
+                <h1>📝 Membership Application Form</h1>
+                <form method="get" action="thankyou.html" class="joinForm">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label>First Name<span class="required-asterisk">*</span><input type="text" name="fname"
+                                id="fname" required></label>
+                        <label>Last Name<span class="required-asterisk">*</span><input type="text" name="lname"
+                                id="lname" required></label>
+                        <label>Title/Position<input type="text" name="title" id="title" pattern="[a-zA-Z\s\-]{7,}"
+                                title="Only alphabetic characters, hyphens, and spaces. Minimum 7 characters."><small><span
+                                    class="error-message" id="title-error">Only alphabetic characters, hyphens, and
+                                    spaces. Minimum 7 characters.</span></small>
+                        </label>
+                        <label>Email<span class="required-asterisk">*</span><input type="email" id="email" name="email"
+                                required placeholder="example@example.com"></label>
+                        <label>Mobile Phone Number<span class="required-asterisk">*</span><input type="tel" id="phone"
+                                name="phone" placeholder="1235551234" required></label>
+                        <label>Business/Organization Name<span class="required-asterisk">*</span><input type="text"
+                                id="organization" name="organization" required></label>
+                        <label>Business/Organization Description<textarea id="description"
+                                name="description"></textarea></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Membership Information</legend>
+                        <label>Membership Level
+                            <select id="membership-level" name="membership-level">
+                                <!--drop down-->
+                                <option value="">Please Seclect</option>
+                                <option value="np">NP Membership (Non Profit)</option>
+                                <option value="bronze">Bronze Membership ($100/Year)</option>
+                                <option value="silver">Silver Membership ($300/Year)</option>
+                                <option value="gold">Gold Membership ($500/Year)</option>
+                            </select>
+                        </label>
+                        <label>Timestamp<input type="date" id="timestamp" name="timestamp"></label>
+                    </fieldset>
+
+                    <input type="submit" value="Confirm My Application">
+                </form>
+            </div>
+
+            <aside class="sidebarJoin">
+                <div class="benefits-container">
+                    <h2>Membership Benefits</h2>
+
+                    <article class="benefits">
+                        <h4>🖈 NP Membership:</h4>
+                        <p>No fee. Access to community events, networking opportunities, and volunteer projects.
+                            Members
+                            will be able to participate in our monthly community gatherings where they can meet
+                            like-minded individuals and organizations. Additionally, members can contribute to
+                            and benefit from our community-driven projects that aim to improve local
+                            environments and social
+                            structures.</p>
+                    </article>
+
+                    <article class="benefits">
+                        <h4>🖈 Bronze Membership:</h4>
+                        <p>Fee $100/Year. Basic benefits including newsletters and event discounts. Bronze
+                            members
+                            receive a quarterly newsletter filled with the latest industry news, tips, and
+                            resources.
+                            Members also get a 10% discount on all event tickets, ensuring they can take full
+                            advantage
+                            of our educational workshops and networking events. This membership level is perfect
+                            for
+                            small organizations or startups looking to expand their knowledge and network.</p>
+                    </article>
+
+                    <article class="benefits">
+                        <h4>🖈 Silver Membership:</h4>
+                        <p>Fee $300/Year. Includes all Bronze benefits plus special training sessions. Silver members
+                            receive all the benefits of Bronze membership, along with exclusive access to specialized
+                            training sessions and webinars. These sessions are designed to provide in-depth knowledge
+                            and skills in areas such as leadership, marketing, and technology. Silver members also enjoy
+                            priority registration for events and early access to new resources and tools.</p>
+                    </article>
+
+                    <article class="benefits">
+                        <h4>🖈 Gold Membership:</h4>
+                        <p>Fee $500/Year. All Silver benefits plus advertising and spotlight positions. Gold
+                            members
+                            receive the highest level of benefits, including everything from the Silver
+                            membership plus
+                            premium advertising opportunities on our website and newsletters. This includes
+                            spotlight
+                            positions where members can showcase their business or organization to our entire
+                            community.
+                            Gold members also receive personalized support and consultation services to help
+                            them
+                            maximize their membership benefits.</p>
+                    </article>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Contact us at 🖂 chehalischamber@example.org | Tel 🖁+1(360)123-5555</p>
+        &copy;<span id="currentYear"></span> Chehalis Chamber |<strong> Amornrat Dizon Howard</strong> |WDD 230 Project
+        |
+        ⚙️Last Modified: <span id="lastModified"></span>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+
+</body>
+
+</html>
