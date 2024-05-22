@@ -1,0 +1,101 @@
+{
+    "weeks": [
+        {
+            "week": "Week 01",
+            "activities": [
+                {
+                    "title": "Layout",
+                    "url": "https://kukkikd.github.io/wdd230/week01/holygrail.html"
+                },
+                {
+                    "title": "Media query",
+                    "url": "https://kukkikd.github.io/wdd230/week01/media-query.html"
+                },
+                {
+                    "title": "Js pen",
+                    "url": "https://codepen.io/Kukkik-A-Dizon/pen/YzMdOQG"
+                }
+            ]
+        },
+        {
+            "week": "Week 02",
+            "activities": [
+                {
+                    "title": "Design",
+                    "url": "https://kukkikd.github.io/wdd230/week02/design.html"
+                },
+                {
+                    "title": "Hamburger",
+                    "url": "https://codepen.io/Kukkik-A-Dizon/pen/wvZbBav"
+                },
+                {
+                    "title": "DOM Manipulation",
+                    "url": "week02/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "activities": [
+                {
+                    "title": "WebP",
+                    "url": "week03/images/landscape.webp"
+                },
+                {
+                    "title": "Lazy Load",
+                    "url": "week03/lazyload.html"
+                },
+                {
+                    "title": "Responsive images",
+                    "url": "week03/responsive-images.html"
+                },
+                {
+                    "title": "localStorage",
+                    "url": "week03/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 04",
+            "activities": [
+                {
+                    "title": "CSS Pseudo-Classes",
+                    "url": "https://codepen.io/Kukkik-A-Dizon/pen/jOoPQOP"
+                },
+                {
+                    "title": "Combinators",
+                    "url": "week04/images/combinators.webp"
+                },
+                {
+                    "title": "Table build",
+                    "url": "week04/tablebuild.html"
+                },
+                {
+                    "title": "HTML Forms",
+                    "url": "week04/form-start/index.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "activities": [
+                {
+                    "title": "CSS Pseudo-Element",
+                    "url": "https://codepen.io/Kukkik-A-Dizon/pen/ExzKZXg"
+                },
+                {
+                    "title": "JSON",
+                    "url": "week05/new-ward-members.json"
+                },
+                {
+                    "title": "Fetch API",
+                    "url": "week05/prophets.html"
+                },
+                {
+                    "title": "Weather API",
+                    "url": "week05/weather.html"
+                }
+            ]
+        }
+    ]
+}
