@@ -30,7 +30,7 @@
     <header>
         <img src="images/dark.svg" alt="dark mode" id="darkBtn" loading="lazy" width="1" height="1">
         <img id="profile-img" src="images/profile.webp" alt="kukkik's profile" loading="lazy" width="691" height="900">
-        <span id="profile-name">KUKKIK | Amornrat Dizon Howard</span>
+        <span id="profile-name">KUKKIK 🌷 Amornrat Dizon Howard</span>
     </header>
     <nav id="animateme">
         <button id="myButton"></button>
@@ -59,41 +59,20 @@
             <section>
                 <h2>Learning Activities</h2>
                 <ul class="learningAct">
-                    <li>Week 01: &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://kukkikd.github.io/wdd230/week01/holygrail.html"> Layout </a><a>|</a>
-                        <a href="https://kukkikd.github.io/wdd230/week01/media-query.html"> Media query </a><a>|</a>
-                        <a href="https://codepen.io/Kukkik-A-Dizon/pen/YzMdOQG"> Js pen </a>
-                    </li>
-                    <li>Week 02: &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://kukkikd.github.io/wdd230/week02/design.html">Design</a><a>|</a>
-                        <a href="https://codepen.io/Kukkik-A-Dizon/pen/wvZbBav"> Hamburger </a><a>|</a>
-                        <a href="week02/bom.html"> DOM Manipulation </a>
-                    </li>
-                    <li>Week 03: &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="week03/images/landscape.webp">WebP</a><a>|</a>
-                        <a href="week03/lazyload.html"> Lazy Load </a><a>|</a>
-                        <a href="week03/responsive-images.html"> Respossive images
-                        </a><a>|</a>
-                        <a href="week03/bom.html"> localStorage </a>
-                    </li>
-                    <li>Week 04:&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://codepen.io/Kukkik-A-Dizon/pen/jOoPQOP">CSS Pseudo-Classes</a><a>|</a>
-                        <a href="week04/images/combinators.webp">Combinators</a><a>|</a>
-                        <a href="week04/tablebuild.html">Table build</a><a>|</a>
-                        <a href="week04/form-start/index.html">HTML Forms</a>
-                    </li>
-                    <li>Week 05:&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://codepen.io/Kukkik-A-Dizon/pen/ExzKZXg">CSS Pseudo-Element</a><a>|</a>
-                        <a href="week05/new-ward-members.json">JSON</a><a>|</a>
-                        <a href="week05/prophets.html">Fetch API</a><a>|</a>
-                        <a href="week05/weather.html">Weather API</a>
-                    </li>
-                    <li><a href="#">Learning Activities</a></li>
+                    <!-- Activity links will be dynamically generated here -->
                 </ul>
             </section>
             <section>
                 <h2>Information</h2>
-                <p>the weather is coming soon</p>
+
+                <div id="weather-card">
+                    <div id="weather-info">
+                        <img id="icon" src="" alt="">
+                        <p id="temperature">--</p>
+                        <p id="description">--</p>
+                    </div>
+                </div>
+
                 <p>&#128640;<span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div><!--End card-->
@@ -115,6 +94,8 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/visitor.js"></script>
+    <script src="scripts/weatherBKK.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>
