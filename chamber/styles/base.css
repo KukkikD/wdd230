@@ -478,3 +478,41 @@ div.thankyou h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+/* --------- DIRECTORY PAGE --------------- */
+
+.view-toggle {
+    margin: 20px;
+}
+
+#members-container.grid-view .member-card {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#members-container.list-view .member-card {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.member-card h3 {
+    margin: 10px 0;
+}
+
+.member-card p {
+    margin: 5px 0;
+}

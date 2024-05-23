@@ -1,0 +1,94 @@
+{
+    "members": [
+        {
+            "name": "RNH Welding",
+            "address": "3732 Jackson Hwy, Chehalis, WA 98340",
+            "phone": "+1(360)827-0804",
+            "website": "http://www.rnhwelding.com",
+            "image": "rnh_welding.png",
+            "membership_level": "Gold",
+            "description": "Your Trusted Partner in Welding and Fabrication"
+        },
+        {
+            "name": "Green Valley Farms",
+            "address": "456 Farm Rd, Chehalis, WA 98532",
+            "phone": "+1(360)555-2000",
+            "website": "http://www.greenvalleyfarms.com",
+            "image": "green_valley_farms.png",
+            "membership_level": "NP",
+            "description": "Fresh and organic produce direct from the farm."
+        },
+        {
+            "name": "Tech Haven",
+            "address": "789 Tech Blvd, Chehalis, WA 98532",
+            "phone": "+1(360)123-3000",
+            "website": "http://www.techhaven.com",
+            "image": "tech_haven.png",
+            "membership_level": "Silver",
+            "description": "Innovative tech solutions for modern businesses."
+        },
+        {
+            "name": "Chehalis Auto Repair",
+            "address": "321 Auto Ln, Chehalis, WA 98532",
+            "phone": "+1(360)555-4000",
+            "website": "http://www.chehalisautorepair.com",
+            "image": "chehalis_auto_repair.png",
+            "membership_level": "Gold",
+            "description": "Reliable and affordable auto repair services."
+        },
+        {
+            "name": "Mountain View Bakery",
+            "address": "654 Sweet St, Chehalis, WA 98532",
+            "phone": "+1(360)789-5000",
+            "website": "http://www.mountainviewbakery.com",
+            "image": "mountain_view_bakery.png",
+            "membership_level": "Silver",
+            "description": "Delicious baked goods made fresh daily."
+        },
+        {
+            "name": "Chehalis Health Clinic",
+            "address": "987 Wellness Blvd, Chehalis, WA 98532",
+            "phone": "+1(360)987-6000",
+            "website": "http://www.chehalishealth.com",
+            "image": "chehalis_health_clinic.png",
+            "membership_level": "Gold",
+            "description": "Comprehensive healthcare services for the community."
+        },
+        {
+            "name": "Northwest Logistics",
+            "address": "111 Transport Rd, Chehalis, WA 98532",
+            "phone": "+1(360)888-7000",
+            "website": "http://www.nwlogistics.com",
+            "image": "northwest_logistics.png",
+            "membership_level": "Bronze",
+            "description": "Efficient and reliable logistics and transportation."
+        },
+        {
+            "name": "Creative Chehalis Designs",
+            "address": "222 Design St, Chehalis, WA 98532",
+            "phone": "+1(360)777-8000",
+            "website": "http://www.creativechehalis.com",
+            "image": "creative_chehalis_designs.png",
+            "membership_level": "Silver",
+            "description": "Transforming ideas into stunning designs."
+        },
+        {
+            "name": "Chehalis Coffee Roasters",
+            "address": "333 Coffee Ln, Chehalis, WA 98532",
+            "phone": "+1(360)666-9000",
+            "website": "http://www.chehaliscoffee.com",
+            "image": "chehalis_coffee_roasters.png",
+            "membership_level": "NP",
+            "description": "Artisanal coffee roasted locally in Chehalis."
+        },
+        {
+            "name": "Valley Pet Care",
+            "address": "444 Pet Blvd, Chehalis, WA 98532",
+            "phone": "+1(360)555-0000",
+            "website": "http://www.valleypetcare.com",
+            "image": "valley_pet_care.png",
+            "membership_level": "Bronze",
+            "description": "Caring and professional pet care services."
+        }
+    ]
+}
