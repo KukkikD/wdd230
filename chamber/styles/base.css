@@ -553,6 +553,7 @@ div.thankyou h1 {
 
 h2#directory {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .grid-view section a {
@@ -562,9 +563,4 @@ h2#directory {
     /* Make sure the URL takes its own line */
     overflow-wrap: anywhere;
     /* Ensure long text wraps properly */
-    font-size: x-small;
-}
-
-.grid-view section p {
-    font-size: small;
 }
