@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             members.forEach(member => {
                 const memberCard = document.createElement('section');
                 memberCard.innerHTML = `
-                    <img src="${baseURL}chamber/images/${member.image}" alt="${member.name}" loading ="lazy" width="1" Higth="1">
+                    <img src="${baseURL}chamber/images/${member.image}" alt="${member.name}" loading ="lazy" width="100" height="100">
                     <h3>${member.name}</h3>
                     <p>🖁 ${member.phone}</p>
                     <p>${member.address}</p>

@@ -103,7 +103,7 @@
     /* --------- DIRECTORY PAGE --------------- */
 
     .grid-view {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         /* Multiple columns for larger screens */
     }
 
@@ -115,20 +115,27 @@
 
     .list-view section {
         display: grid;
-        grid-template-columns: 2fr 2fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr 1fr 2fr;
         /* Four columns for larger screens */
-        align-items: center;
+        text-align: left;
+        margin: 0 0;
+
     }
 
     .list-view section h3,
     .list-view section p,
     .list-view section a {
         margin: 0;
+        text-align: left;
     }
 
     .list-view section img {
         display: none;
         /* Hide image in list view */
+    }
+
+    .list-view section h3 {
+        margin-left: 2vw;
     }
 
 }
