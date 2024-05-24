@@ -107,6 +107,10 @@
         /* Multiple columns for larger screens */
     }
 
+    .grid-view section {
+        margin: 1rem 2vw;
+    }
+
 
     .list-view {
         display: flex;
