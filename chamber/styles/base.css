@@ -522,6 +522,8 @@ div.thankyou h1 {
     background-color: var(--accent2-color);
     text-align: center;
     box-shadow: 2px 2px 4px #333;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .grid-view img {

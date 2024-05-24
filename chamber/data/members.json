@@ -89,6 +89,24 @@
             "image": "valley_pet_care.png",
             "membership_level": "Bronze",
             "description": "Caring and professional pet care services."
+        },
+        {
+            "name": "Ashby Builders",
+            "address": "456 Green St, Chehalis, WA 98502",
+            "phone": "+1(360)555-4444",
+            "website": "http://www.ashby.com",
+            "image": "ashby_builders.png",
+            "membership_level": "Gold",
+            "description": "Leading the way in eco-friendly construction."
+        },
+        {
+            "name": "Tech Innovators",
+            "address": "789 Oat St, Chehalis, WA 98540",
+            "phone": "+1(425)123-4567",
+            "website": "http://www.techinnovators.com",
+            "image": "tech_innovators.png",
+            "membership_level": "Silver",
+            "description": "Innovating the future of technology."
         }
     ]
 }

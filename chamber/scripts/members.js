@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 memberCard.innerHTML = `
                     <img src="${baseURL}chamber/images/${member.image}" alt="${member.name}" loading ="lazy" width="100" height="100">
                     <h3>${member.name}</h3>
-                    <p>🖁 ${member.phone}</p>
+                    <p>☏ ${member.phone}</p>
                     <p>${member.address}</p>
                     <a href="${member.website}" target="_blank">${member.website}</a>
                 `;
