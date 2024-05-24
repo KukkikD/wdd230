@@ -98,4 +98,37 @@
         margin-top: 100px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
+
+    /* --------- DIRECTORY PAGE --------------- */
+
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Multiple columns for larger screens */
+    }
+
+
+    .list-view {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-view section {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        /* Four columns for larger screens */
+        align-items: center;
+    }
+
+    .list-view section h3,
+    .list-view section p,
+    .list-view section a {
+        margin: 0;
+    }
+
+    .list-view section img {
+        display: none;
+        /* Hide image in list view */
+    }
+
 }

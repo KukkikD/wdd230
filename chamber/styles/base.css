@@ -482,37 +482,87 @@ div.thankyou h1 {
 /* --------- DIRECTORY PAGE --------------- */
 
 .view-toggle {
-    margin: 20px;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--accent2-color);
+    text-align: center;
 }
 
-#members-container.grid-view .member-card {
-    display: inline-block;
-    width: 30%;
-    box-sizing: border-box;
-    margin: 10px;
+.view-toggle button {
+    padding: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(#1A4D2E, #dcd7d7);
+    color: #fff;
 }
 
-#members-container.list-view .member-card {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+#directory-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.member-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+/* Styles for grid view */
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Default to single column */
+    grid-gap: 10px;
 }
 
-.member-card img {
+.grid-view section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--accent2-color);
+    text-align: center;
+    box-shadow: 2px 2px 4px #333;
+}
+
+.grid-view img {
     max-width: 100%;
     height: auto;
 }
 
-.member-card h3 {
-    margin: 10px 0;
+.grid-view h3 {
+    font-family: "Oleo Script", sans-serif;
 }
 
-.member-card p {
-    margin: 5px 0;
+/* Styles for list view */
+.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-view section {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+.list-view section h3,
+.list-view section p,
+.list-view section a {
+    margin: 0.5rem 0;
+}
+
+.list-view section:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+
+h2#directory {
+    text-align: center;
+}
+
+.grid-view section a {
+    word-break: break-all;
+    /* This will break long words (like long URLs) to fit the section */
+    display: block;
+    /* Make sure the URL takes its own line */
+    overflow-wrap: anywhere;
+    /* Ensure long text wraps properly */
+    font-size: x-small;
+}
+
+.grid-view section p {
+    font-size: small;
 }
