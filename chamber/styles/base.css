@@ -180,6 +180,7 @@ footer p {
     text-decoration: none;
     border-radius: 10px;
     overflow: hidden;
+
 }
 
 .join:hover {
@@ -241,35 +242,65 @@ h1 {
     margin: .75rem 0;
 }
 
-.weather-card {
-    background-color: rgba(250, 232, 217, 0.3);
-    display: block;
-    text-align: center;
-}
-
+/* CURRENT EVENT */
 .current-events {
     background-color: rgba(250, 232, 217, 0.3);
-    display: block;
-    text-align: left;
-    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
 }
 
+current-events>h2 {
+    margin-bottom: 1rem;
+}
+
+.event-img {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-right: 20px;
+}
+
+.event-img img {
+    width: 100%;
+    height: auto;
+}
+
+.event-msg {
+    flex: 1;
+}
+
+#more {
+    display: none;
+}
+
+#readMore {
+    border: none;
+    background-image: linear-gradient(#1A4D2E, #dcd7d7);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    font-size: small;
+}
+
+/* COMPANY SPOTLIGHT */
 .company-spotlights {
     background: none;
     display: block;
     text-align: center;
+    margin-top: 20px;
 }
-
 
 .company {
     display: block;
     text-align: center;
-    margin: 1rem 2vw;
+    margin: 10px 2vw;
 }
 
 .company section {
     background-color: rgba(250, 232, 217, 0.3);
     padding: 10px;
+    margin: 10px;
 }
 
 .company p {
@@ -278,6 +309,86 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+/*-------WEATHER FORECAST-------*/
+.weather-card {
+    background-color: rgba(250, 232, 217, 0.3);
+    display: block;
+    text-align: center;
+}
+
+#weather {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#currentTemp {
+    margin-top: 2rem;
+    margin-bottom: -10px;
+}
+
+#currentTemp,
+#weatherDescription {
+    font-weight: bold;
+    font-size: medium;
+    color: #833d0e;
+}
+
+.weather-card h3 {
+    margin-top: 2rem;
+}
+
+.current-weather {
+    padding: 0 5px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.current-weather img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast-item {
+    border: 1px solid var(--accent1-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.forecast-item img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*------- COMPANY SPOTLIGHT ----------*/
+.company-spotlights h2 {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1A4D2E, 0 0 20px #1A4D2E, 0 0 25px #1A4D2E, 0 0 30px #1A4D2E, 0 0 35px #1A4D2E;
+    }
+
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #7ea99b, 0 0 20px #7ea99b, 0 0 25px #7ea99b, 0 0 30px #7ea99b, 0 0 35px #7ea99b, 0 0 40px #7ea99b;
+    }
 }
 
 /* --------- DISCOVER PAGE --------------- */

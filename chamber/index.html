@@ -62,29 +62,58 @@
         <div class="card">
             <!-- Weather Card Section -->
             <section class="weather-card">
-                <h2>Local Weather</h2>
-                <p><strong>75°F, Sunny🔆</strong></p>
-                <p>Perfect day for an outdoor event!</p>
+                <h2 id="weather-h2">Chehalis Weather</h2>
+                <div id="weather">
+                    <div class="current-weather">
+                        <h3>Today</h3>
+                        <img id="weatherIcon" alt="Weather Icon" />
+                        <div>
+                            <p id="currentTemp"></p>
+                            <p id="weatherDescription"></p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="forecast" class="forecast-container"></div>
+                </div>
+
             </section>
 
             <!-- Current Events Section -->
             <section class="current-events">
-                <h2>Current Events</h2>
-                <h3>📅 3rd Annual Mother's Day Market - May 04, 2024</h3>
-                <p>Come shop over 40 different vendors and artisans! Find something for Mom or bring Mom and make a
-                    day of it! Food trucks,</p><a href="#" class="read-more">Read more...</a>
-                <p class="hidden">dessert trucks and coffee trucks! For those 21+ stop by the Mimosa Bar
-                    and purchase a drink while you shop. The catered bar is brought to you by Garbe’s.
-                    <br>Saturday, May 4th, 3pm-8pm
-                    <br>Jester Auto Museum 321 Hamilton Rd.,Chehalis, WA 98532
-                    <br>Free Admission & Free Parking
-                </p>
+                <h2>Current Events🎈</h2>
+                <div class="card-event">
+                    <picture class="event-img">
+                        <source srcset="images/spring-small.webp" media="(max-width: 500px)">
+                        <img src="images/spring-large.webp" alt="Community Farmer Market" loading="lazy" width="5"
+                            height="4">
+                    </picture>
+                    <div class="event-msg">
+                        <h3>📅 Community Farmer's Market - June 4, 2024</h3>
+                        <p>Find locally grown fruits, veggies, and much more in Chehalis every Tuesday from June through
+                            September at the Chehalis Farmers Market. Nestled in the heart of the downtown Chehalis,
+                            this bustling market invites you to discover the freshest produce, artisanal goods, and
+                            local
+                            crafts from <span id="dots">...</span>
+                            <span id="more">11am to 4pm.
+                                Wander through the
+                                lively stalls, filled with seasonal delights and flavorful
+                                treasures, while enjoying the warm embrace of community spirit. Whether you're seeking
+                                farm-fresh ingredients, handcrafted gifts, or simply a delightful day out, the Chehalis
+                                Farmers Market offers a wholesome experience that celebrates local flavor!
+                                <br>🕒 June 4, 2024 11:00 am - 4:00 pm
+                                <br>🏢 Downtown Chehalis, 60 NW Boistfort Street, Chehalis, WA 98532
+                                <br>🚙 Free Admission & Free Parking
+                            </span>
+                        </p>
+                        <button onclick="myFunction()" id="readMore">Read more</button>
+                    </div>
+                </div>
             </section>
         </div>
 
         <!-- Company Spotlights Section -->
         <section class="company-spotlights">
-            <h2>Company Spotlights</h2>
+            <h2>⚡ Company Spotlights ⚡</h2>
         </section>
         <div class="company">
             <section>
@@ -112,6 +141,8 @@
         ⚙️Last Modified: <span id="lastModified"></span>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/read-more.js"></script>
+    <script src="scripts/weatherForecast.js"></script>
 </body>
 
 </html>

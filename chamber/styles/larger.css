@@ -47,6 +47,58 @@
         font-size: 15px;
     }
 
+    .card-event {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .event-img {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-right: 20px;
+        margin-top: 1rem;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    .event-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .event-msg {
+        flex: 1;
+        margin-top: 1rem;
+    }
+
+    /* WEATEHER FORECAST*/
+
+    #weather {
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    .current-weather {
+        justify-items: center;
+    }
+
+    .forecast-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .forecast-item {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .forecast-item:last-child {
+        margin-right: 0;
+    }
+
     /* --------- DISCOVER PAGE --------------- */
 
     .container {
