@@ -35,7 +35,7 @@ function displayWeather(weatherData, forecastData) {
 
     for (let i = 8; i < 32; i += 8) { // Start at the 8th entry and take every 8th entry (24 hours apart)
         const forecast = forecastData.list[i];
-        const date = new Date(forecast.dt * 1000);
+        const date = new Date(forecast.dt * 1000); // create Date object
         const options = { weekday: 'long' };
         const dayOfWeek = date.toLocaleDateString('en-US', options); // Get day of the week 
         const temp = forecast.main.temp;
