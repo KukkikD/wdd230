@@ -148,7 +148,7 @@ footer p {
     background-color: rgba(255, 255, 255, 0.8);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
-    opacity: 0.75;
+    opacity: 0.80;
     width: 50%;
     max-width: 500px;
     z-index: 1;
@@ -161,7 +161,9 @@ footer p {
 
 .hero-msg p {
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #092514;
 }
 
 /* Buttons */
@@ -173,8 +175,8 @@ footer p {
 }
 
 .join {
-    background-color: #1A4D2E;
-    color: #fefae0;
+    background-color: #092514;
+    color: #fff;
     padding: 12px 20px;
     font-size: 10px;
     text-decoration: none;
@@ -184,8 +186,8 @@ footer p {
 }
 
 .join:hover {
-    background-color: var(--paragraph-color-on-color);
-    color: var(--nav-background-color);
+    background-image: linear-gradient(rgba(5, 72, 58, 0.9), #000);
+    color: var(--paragraph-color-on-color);
 }
 
 /* BANNER */
