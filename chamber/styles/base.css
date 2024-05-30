@@ -188,6 +188,71 @@ footer p {
     color: var(--nav-background-color);
 }
 
+/* BANNER */
+
+/* The alert message box */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+    text-align: center;
+    opacity: 0.90;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content p::first-letter {
+    font-size: 200%;
+}
+
+.modal-content p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* The Close Button */
+.close {
+    color: var(--headline-color-on-white);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--paragraph-color-on-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 header {
     text-align: center;
     align-items: center;
@@ -288,6 +353,7 @@ current-events>h2 {
     background: none;
     text-align: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .company {
@@ -296,14 +362,15 @@ current-events>h2 {
     text-align: center;
     margin: 10px 2vw;
     align-items: center;
-
     grid-gap: 10px;
+    max-width: 100%;
 }
 
 .spotlight-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    max-width: 100%;
 }
 
 

@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch the member data from the JSON file
     fetch(linksURL)
         .then(response => {
-
             // Check if the network response is okay
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -31,23 +30,18 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
-            console.log('Data fetched successfully:', data);
-
             // Display the members on the page
             displayMembers(data.members);
         })
         .catch(error => {
-
             // Log any errors that occur during fetching
             console.error('Error fetching data:', error);
         });
 
     // Function to display members in either grid or list view
     const displayMembers = (members) => {
-
         // Check if the current view is grid view
         if (directoryContainer.classList.contains('grid-view')) {
-
             // Clear the container before adding new content
             directoryContainer.innerHTML = '';
 
@@ -55,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             members.forEach(member => {
                 const memberCard = document.createElement('section');
                 memberCard.innerHTML = `
-                    <img src="${baseURL}chamber/images/${member.image}" alt="${member.name}" loading ="lazy" width="100" height="100">
+                    <img src="${baseURL}chamber/images/${member.image}" alt="${member.name}" loading="lazy" width="100" height="100">
                     <h3>${member.name}</h3>
                     <p>☏ ${member.phone}</p>
                     <p>${member.address}</p>
@@ -82,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for grid view button
     gridViewButton.addEventListener('click', () => {
-
         // Switch to grid view by adding the class
         directoryContainer.className = 'grid-view';
 
@@ -95,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for list view button
     listViewButton.addEventListener('click', () => {
-
         // Switch to list view by adding the class
         directoryContainer.className = 'list-view';
 
