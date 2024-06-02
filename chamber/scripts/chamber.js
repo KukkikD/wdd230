@@ -32,3 +32,16 @@ document.querySelectorAll('.read-more').forEach(link => {
     });
 });
 
+//Active menu
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('JavaScript loaded and running');
+    const currentPath = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        console.log('Checking link:', link.getAttribute('href'));
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+});
